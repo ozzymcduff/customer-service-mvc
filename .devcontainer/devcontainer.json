@@ -8,15 +8,20 @@
 		"vscode": {
 			"extensions": [
 				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.csharp",
 				"GitHub.copilot",
 				"GitHub.copilot-chat"
 			]
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "7.0",
+			"additionalVersions": "2.1"
+		}
+	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001],
 	// "portsAttributes": {
